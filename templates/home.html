@@ -1,0 +1,11 @@
+{% include 'base.html' %}
+{% block content %}
+<form action="/" method="POST">{% csrf_token %}
+{{form}}
+<input type="submit"/>
+</form>
+<br>
+{% if out %}
+    The fibonacci is {{ out }}.
+{% endif %}
+{% endblock %}
