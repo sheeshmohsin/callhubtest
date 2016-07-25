@@ -28,3 +28,14 @@ You can now run the usual Django ``runserver`` command (replace ``yourapp`` with
     $ python yourapp/manage.py runserver
 
 For caching, its needed to setup redis-server and start the redis server on port 6379.
+
+Testing
+-------
+
+For testing, you can use these commands::
+    
+    $ python manage.py test
+    
+For callhubapp test, you can use this::
+
+    $ python manage.py test callhubapp
